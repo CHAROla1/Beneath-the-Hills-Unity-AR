@@ -1,0 +1,1451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{b60d8e7c-6049-0ac4-6fc5-d31fd5a5d4c1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_2021_3_11;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;USE_SEARCH_TABLE;USE_SEARCH_MODULE;USE_PROPERTY_DATABASE;USE_SEARCH_EXTENSION_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_ANDROID;TEXTCORE_1_0_OR_NEWER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_ETC_COMPRESSION;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;MOREMOUNTAINS_NICEVIBRATIONS_INSTALLED;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;DEVELOPMENT_BUILD</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+     <Compile Include="Assets/ThirdParty/QuickOutline/Scripts/Outline.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/LocationStatus.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/SubLayerCustomStyleAtlasWithColorPallete.cs" />
+     <Compile Include="Assets/ThirdParty/Epic Toon FX/Demo/Scripts/ETFXFireProjectile.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Geocoding/Response/Feature.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Platform/Cache/MemoryCache.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/ILocationProvider.cs" />
+     <Compile Include="Assets/Scripts/Item/ExplodeObject.cs" />
+     <Compile Include="Assets/Scripts/Utilities/OutOfBound.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/SubLayerRealisticStyle.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifiers/SnapTerrainRaycastModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ISubLayerStyle.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ISubLayerCustomStyleAtlas.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/PoiLabelTextSetter.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Factories/TileProcessFinishedEventArgs.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/ObjectPool.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/SubLayerCustomStyleTiled.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Components/FeatureBehaviour.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Utils/JsonConverters/BboxToGeoCoordinateBoundsConverter.cs" />
+     <Compile Include="Assets/ThirdParty/Epic Toon FX/Demo/Scripts/ETFXButtonScript.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/AngleSmoothing/AngleSmoothingAverage.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/HeroBuildingSelectionUserInput.cs" />
+     <Compile Include="Assets/ThirdParty/Epic Toon FX/Scripts/ETFXLightFade.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/AngleSmoothing/AngleSmoothingEMA.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Platform/Cache/CacheItem.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/MakiHelper.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Factories/TerrainStrategies/ElevationBasedTerrainStrategy.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Data/MeshData.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Map/Interfaces/IMapScalingStrategy.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/SingletonScriptableObject.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/LocationPrefabCategoryOptions.cs" />
+     <Compile Include="Assets/Scripts/UI/MoneyInstantiate.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Map/TileProviders/TileErrorHandler.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/LocationArrayEditorLocationProvider.cs" />
+     <Compile Include="Assets/Scripts/TimeLine/TimeLineManager.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/LabelTextSetter.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Map/Strategies/MapScalingAtWorldScaleStrategy.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/Location.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/LayerVisualizers/VectorLayerVisualizer.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/LayerProperties/LayerProperties.cs" />
+     <Compile Include="Assets/ThirdParty/Epic Toon FX/Demo/Scripts/ETFXMouseOrbit.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifiers/LoftModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Platform/TileJSON/TileJSONReponse.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Platform/IAsyncRequest.cs" />
+     <Compile Include="Assets/Scripts/Controller/AdjustManager.cs" />
+     <Compile Include="Assets/ThirdParty/Ultimate 10 Plus Shaders/Shaders/Plexus/Plexus.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/MapMatching/MapMatchingParameters.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Map/TileCover.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/4_ReplaceFeatures/Scripts/BlinkLight.cs" />
+     <Compile Include="Assets/ThirdParty/Epic Toon FX/Demo/Scripts/ETFXTarget.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/LayerModifierOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Platform/HTTPRequestThreaded.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ISubLayerTexturing.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/IReplaceable.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/SubLayerLightStyle.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Platform/Cache/ICache.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Map/TileProviders/QuadTreeMapVisualizer.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/SubLayerModeling.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Map/CanonicalTileId.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ISubLayerLightStyle.cs" />
+     <Compile Include="Assets/ThirdParty/SpaceSkies Free/Demo/Scripts/LookCamera.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/StyleSearchAttribute.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Telemetry/TelemetryDummy.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/5_Playground/Scripts/ForwardGeocoderExample.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/UnityLocationWrappers/MapboxLocationServiceUnityWrapper.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Data/KdTree/DistanceFunctions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/TerrainLayer.cs" />
+     <Compile Include="Assets/Scripts/UI/FallingMoney.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/ModifierStack.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifiers/AddMonoBehavioursModifierType.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Factories/TerrainStrategies/TerrainStrategy.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/7_Globe/Scripts/SpawnOnGlobeExample.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/EditorLocationProviderLocationLog.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Map/TileResource.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautMouseController.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Factories/TerrainStrategies/LowPolyTerrainStrategy.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Data/KdTree/IntervalHeap.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ISubLayerColliderOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/HTTPRequest.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/RangeAroundTransformTileProviderOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/MapboxDefaultImagery.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/LayerProperties/PresetSubLayerPropertiesFetcher.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Factories/VectorTileFactory.cs" />
+     <Compile Include="Assets/Scripts/UI/CameraDebug.cs" />
+     <Compile Include="Assets/ThirdParty/Epic Toon FX/Demo/Scripts/ETFXEffectController.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Map/Strategies/MapPlacementAtLocationCenterStrategy.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Interfaces/LayerVisualizerBase.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Directions/Response/Route.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/GameObjectExtensions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/LayerProperties/CoreVectorLayerProperties.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Data/VectorFeatureUnity.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Map/VectorTile.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/TileStats.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Geocoding/Geocoder.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Data/FeatureCollectionBase.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/LayerSourceOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/AbstractLocationProvider.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/6_ZoomableMap/Scripts/SpawnOnMap.cs" />
+     <Compile Include="Assets/Test.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Components/VertexDebuggerGizmo.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Platform/Cache/SQLiteCache/Tiles.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Filters/TypeFilter.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Map/Strategies/MapPlacementAtTileCenterStrategy.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Map/Interfaces/ITileProvider.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ISubLayerExtrusionOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Geocoding/Response/GeocodeResponse.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/8_VoxelMap/Scripts/TextureScaler.cs" />
+     <Compile Include="Assets/ThirdParty/Epic Toon FX/Demo/Scripts/VFX Library/PEButtonScript.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Platform/SQLite/SQLite.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Utils/IObservable.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Map/TileProviders/AbstractTileProvider.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Filters/FilterBase.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/LocationSmoothing/KalmanFilter.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Utils/Vector2d/Vector2d.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Utils/Constants.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Factories/TerrainDataFetcher.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/3_POIPlacement/POIPlacementScriptExample.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/IReplacementCriteria.cs" />
+     <Compile Include="Assets/ThirdParty/michaeltaylor3d/GPSEncoder/GPSEncoder.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/Plugins/Android/UniAndroidPermission/UniAndroidPermission.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/ImmediatePositionWithLocationProvider.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifiers/LayerModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/GeometryExtrusionOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ITerrainLayer.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/Runnable.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/SpawnPrefabOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/CameraBillboard.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Directions/Response/Step.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Directions/Response/Waypoint.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/FeatureUiMarker.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/7_Globe/Scripts/DragRotate.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Utils/Vector2d/RectD.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Platform/TileJSON/TileJSONObjectVectorLayer.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Map/ClassicRasterTile.cs" />
+     <Compile Include="Assets/Scripts/UI/ButtonCreateAction.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Enums/TilePropertyState.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/MapMatching/MapMatchingResponse.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifiers/FeatureBehaviourModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifiers/HeightModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Utils/BearingFilter.cs" />
+     <Compile Include="Assets/ThirdParty/Sci-Fi UI/Demo_Assets/scripts/GUI_Demo.cs" />
+     <Compile Include="Assets/Scripts/Controller/WayPointsManager.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/UnifiedMapOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/VectorEntity.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Utils/JsonConverters/JsonConverters.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/5_Playground/Scripts/DirectionsExample.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifiers/ReplaceFeatureCollectionModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Platform/IResource.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Directions/RoutingProfile.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/PolygonUtils.cs" />
+     <Compile Include="Assets/Scripts/Epoch/EpochSceneManager.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/LayerProperties/VectorFilterOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/MapVisualizerPerformance.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Factories/TerrainStrategies/ElevatedTerrainWithSidesStrategy.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/RangeTileProviderOptions.cs" />
+     <Compile Include="Assets/Scripts/Controller/PackageManager.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautDirections.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/OpenUrlOnButtonClick.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/MapScalingOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Geocoding/Response/Geometry.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/CameraMovement.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/LayerProperties/VectorLayerProperties.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Platform/FileSource.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifiers/UvModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/UnityLocationWrappers/MapboxLocationServiceMock.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/probe-extractor-cs/ProbeExtractor.cs" />
+     <Compile Include="Assets/VuforiaLicense.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/MeshGenerationBase.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/cheap-ruler-cs/CheapRuler.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifiers/SnapTerrainModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/SubLayerCustomStyleAtlas.cs" />
+     <Compile Include="Assets/Scripts/UI/CanvasFollowPlayer.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Directions/Overview.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/VectorLayer.cs" />
+     <Compile Include="Assets/Scripts/UI/DirectionArrow.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/CharacterMovement.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/HighlightFeature.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/AbstractLayer.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Constants.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifiers/AddToCollectionModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifiers/ChamferHeightModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/UpdateMapWithLocationProvider.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/TransformLocationProvider.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifiers/PolygonMeshModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifiers/TextureModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Data/UnityTile.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/ModifierBase.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/LineGeometryOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Epic Toon FX/Demo/Scripts/ETFXProjectileScript.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ISubLayerBehaviorModifiers.cs" />
+     <Compile Include="Assets/Scripts/Controller/GPSLocation.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/MapboxEnums.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/ElevationRequiredOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/ExtentOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Platform/IAsyncRequestFactory.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/LoadingPanelController.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/LayerVisualizers/LocationPrefabsLayerVisualizer.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Geocoding/GeocodeResource.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/ForwardGeocodeUserInput.cs" />
+     <Compile Include="Assets/ThirdParty/SpaceSkies Free/Demo/Scripts/SkyboxChanger.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Data/KdTreeCollection.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Map/MapVisualizer.cs" />
+     <Compile Include="Assets/Scripts/UI/MoneyFlying.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifiers/Earcut.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/TileJsonData.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Factories/TerrainStrategies/ElevatedTerrainStrategy.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/DeviceLocationProviderAndroidNative.cs" />
+     <Compile Include="Assets/Scripts/Controller/MapCameraController.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Directions/Response/Annotation.cs" />
+     <Compile Include="Assets/ThirdParty/Epic Toon FX/Scripts/ETFXPitchRandomizer.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/TerrainColliderOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/MapboxDataProperty.cs" />
+     <Compile Include="Assets/Scripts/PutLocation.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/DontDestroyOnLoad.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifiers/PrefabModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/IImageryLayer.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Platform/Cache/SQLiteCache/Tilesets.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MapboxAccess.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/MapLocationOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Map/Map.cs" />
+     <Compile Include="Assets/Scripts/UI/PopupCreator.cs" />
+     <Compile Include="Assets/Scripts/Utilities/ObjectDestroyer.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifiers/MapboxStylesColorModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Telemetry/TelemetryAndroid.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Directions/Response/Leg.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/5_Playground/Scripts/LogLocationProviderData.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/LocationProviderFactory.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/8_VoxelMap/Scripts/VoxelTile.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/FeatureSelectionDetector.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Utils/JsonConverters/LonLatToGeoCoordinateConverter.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Factories/TerrainStrategies/FlatSphereTerrainStrategy.cs" />
+     <Compile Include="Assets/Scripts/UI/Popup.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/PoiMarkerHelper.cs" />
+     <Compile Include="Assets/ThirdParty/Epic Toon FX/Demo/Scripts/VFX Library/ParticleEffectsLibrary.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ISubLayerColorStyle.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Telemetry/TelemetryEditor.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Map/InitializeMapWithLocationProvider.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/UnityLocationWrappers/MapboxLocationInfoUnityWrapper.cs" />
+     <Compile Include="Assets/Scripts/UI/MapController.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ISubLayerCustomStyleAtlasWithColorPallete.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ILayer.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/UnityLayerOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/DebugTools/SceneData.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Map/TileErrorEventArgs.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/TrafficUvAnimator.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Factories/AbstractTileFactory.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Geocoding/ForwardGeocodeResource.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ISubLayerSimpleStyle.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Directions/Response/Intersection.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/Logging/LocationLogReader.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ISubLayerModeling.cs" />
+     <Compile Include="Assets/ThirdParty/Epic Toon FX/Scripts/ETFXRotation.cs" />
+     <Compile Include="Assets/Scripts/Controller/SelectManager.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Map/ClassicRetinaRasterTile.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/5_Playground/Scripts/VectorTileExample.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/CameraBoundsTileProviderOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/DebugTools/ScenesList.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Factories/TerrainFactoryBase.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/LayerProperties/ImageryLayerProperties.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/RotateWithLocationProvider.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/TextureSideWallModifier.cs" />
+     <Compile Include="Assets/Scripts/Utilities/DestroyEvent.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ImageryLayer.cs" />
+     <Compile Include="Assets/Scripts/ARLocationManager.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/MapMatching/Tracepoint.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Platform/TileJSON/TileJSON.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/UnityLocationWrappers/IMapboxLocationInfo.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifiers/DisableMeshRendererModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Factories/VectorDataFetcher.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Interfaces/IFeaturePropertySettable.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Utils/PolylineUtils.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/TileStatsFetcher.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/SubLayerDarkStyle.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/ReverseGeocodeUserInput.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/ChangeShadowDistance.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/DeviceLocationProvider.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/8_VoxelMap/Scripts/VoxelData.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Data/AtlasInfo.cs" />
+     <Compile Include="Assets/ExampleAssets/Scripts/ARFeatheredPlaneMeshVisualizer.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/PositionWithLocationProvider.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Map/Tile.cs" />
+     <Compile Include="Assets/ThirdParty/Ultimate 10 Plus Shaders/Scripts/U10PS_DissolveOverTime.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/LayerProperties/ElevationLayerProperties.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Tokens/MapboxToken.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/LayerProperties/VectorSubLayerProperties.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Utils/Compression.cs" />
+     <Compile Include="Assets/ThirdParty/Ultimate 10 Plus Shaders/Scripts/U10PS_ExampleReview.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/AngleSmoothing/AngleSmoothingAbstractBase.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifiers/MaterialModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Epic Toon FX/Demo/Scripts/ETFXSceneManager.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/MapMatching/MapMatcher.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/MapboxDefaultVector.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/AbstractEditorLocationProvider.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/MapPlacementOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/NodeEditorElementAttribute.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/SubLayerSimpleStyle.cs" />
+     <Compile Include="Assets/ThirdParty/Epic Toon FX/Demo/Scripts/ETFXSpriteBouncer.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifiers/SpawnInsideModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifiers/TagModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Utils/IObserver.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/GeocodeAttribute.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/ImageryRasterOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/MapMatching/MatchObject.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ISubLayerRealisticStyle.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Map/Strategies/MapScalingAtUnityScaleStrategy.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Platform/IFileSource.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/Logging/LocationLogAbstractBase.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Geocoding/ReverseGeocodeResource.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ISubLayerCustomStyle.cs" />
+     <Compile Include="Assets/ThirdParty/Epic Toon FX/Demo/Scripts/ETFXLoopScript.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Platform/HTTPRequestNonThreaded.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Data/KdTree/NearestNeighbour.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Platform/Response.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Data/KdTree/KDNode.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Components/VertexDebugger.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Filters/HeightFilter.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/GeometryMaterialOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/MergedModifierStack.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ISubLayerDarkStyle.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/DragableDirectionWaypoint.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/TerrainSideWallOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Ultimate 10 Plus Shaders/Scripts/U10PS_MouseRotation.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/Singleton.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Map/TileProviders/RangeTileProvider.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/Console.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/TelemetryConfigurationButton.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Map/UnwrappedTileId.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Styling/ScriptablePalette.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/5_Playground/Scripts/ReverseGeocoderExample.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Map/Interfaces/IUnifiedMap.cs" />
+     <Compile Include="Assets/Scripts/Portal/PortalManager.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/MapExtentOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Factories/MapImageFactory.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Telemetry/ITelemetryLibrary.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/ElevationModificationOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/AngleSmoothing/AngleSmoothingNoOp.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Map/TileProviders/QuadTreeTileProvider.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Map/MapUtils.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/1_DataExplorer/Scripts/TextMeshOutline.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Tokens/MapboxTokenApi.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/MapMatching/MapMatchingResource.cs" />
+     <Compile Include="Assets/Scripts/Utilities/AutoDestroy.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifiers/AddMonoBehavioursModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Telemetry/TelemetryFactory.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Map/Interfaces/IMap.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Directions/Directions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Directions/Response/Maneuver.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Utils/Vector2d/Mathd.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/ObjectInspectorModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/ColliderOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/MapOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Utils/UnixTimestampUtils.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifiers/ColliderModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Epic Toon FX/Demo/Scripts/ETFXEffectCycler.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Directions/Response/DirectionsResponse.cs" />
+     <Compile Include="Assets/ThirdParty/Epic Toon FX/Demo/Scripts/VFX Library/UICanvasManager.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/MapboxDefaultElevation.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifiers/SmoothLineModifier.cs" />
+     <Compile Include="Assets/Scripts/Item/SelectableObj.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Data/KdTree/KDTree.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/AngleSmoothing/IAngleSmoothing.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Factories/TerrainStrategies/FlatTerrainStrategy.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ISubLayerLineGeometryOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Utils/GeoCoordinateBounds.cs" />
+     <Compile Include="Assets/ThirdParty/Epic Toon FX/Demo/Scripts/ETFXEffectControllerPooled.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifiers/LineMeshModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Map/TileProviders/RangeAroundTransformTileProvider.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Map/RawPngRasterTile.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/Conversions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/DataContainers/LayerPerformanceOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/AndroidSettings.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ISubLayerCustomStyleTiled.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifiers/NoiseOffsetModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/UnityLocationWrappers/MapboxLocationInfoMock.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/SubLayerFantasyStyle.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/MapboxDefaultStyles.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/LayerProperties/PrefabItemOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Telemetry/TelemetryFallback.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Telemetry/TelemetryWebgl.cs" />
+     <Compile Include="Assets/ExampleAssets/Scripts/AnchorCreator.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Components/TextureSelector.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Map/AbstractMap.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/ReloadMap.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Map/Interfaces/IMapPlacementStrategy.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ISubLayerCustomStyleOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Map/AbstractMapVisualizer.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/Scripts/QuadTreeCameraMovement.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Utils/CircularBuffer.cs" />
+     <Compile Include="Assets/Scripts/UI/TapAnimation.cs" />
+     <Compile Include="Assets/Scripts/Portal/Portal.cs" />
+     <Compile Include="Assets/ThirdParty/Ultimate 10 Plus Shaders/Scripts/U10PS_SnowOverTime.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/probe-extractor-cs/Probe.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/SubLayerColorStyle.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/ModifierStackBase.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Platform/Resource.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/5_Playground/Scripts/RasterTileExample.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/DescriptionAttribute.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Telemetry/TelemetryIos.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Map/RetinaRasterTile.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Utilities/VectorExtensions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/SubLayerCustomStyle.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/SubLayerBehaviorModifiers.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ISubLayerCoreOptions.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/6_ZoomableMap/Scripts/SetCameraHeight.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/8_VoxelMap/Scripts/VoxelFetcher.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Platform/Cache/CachingWebFileSource.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/UnityLocationWrappers/IMapboxLocationService.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Factories/DirectionsFactory.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Directions/DirectionResource.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Data/KdTree/MinHeap.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Utils/JsonConverters/PolylineToGeoCoordinateListConverter.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/Logging/LocationLogWriter.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/SourceLayers/ISubLayerFantasyStyle.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifiers/TextureMonoBehaviourModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifiers/ReplaceFeatureModifier.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/EditorLocationProvider.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Platform/Cache/SQLiteCache/SQLiteCache.cs" />
+     <Compile Include="Assets/Scripts/Epoch/Epoch.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Location/AngleSmoothing/AngleSmoothingLowPass.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/Map/TileProviders/GlobeTileProvider.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Examples/1_DataExplorer/HighlightBuildings.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Core/mapbox-sdk-cs/Map/RasterTile.cs" />
+     <Compile Include="Assets/ThirdParty/Mapbox/Unity/MeshGeneration/Factories/ImageDataFetcher.cs" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
+     <None Include="Assets/ThirdParty/Epic Toon FX/Prefabs/Environment/Environment FX.txt" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets/ThirdParty/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/ProjectorLight.shader" />
+     <None Include="Assets/ThirdParty/Ultimate 10 Plus Shaders/Shaders/Edge Detection.shader" />
+     <None Include="Assets/ThirdParty/Epic Toon FX/Prefabs/Combat/Combat FX.txt" />
+     <None Include="Assets/ThirdParty/Mapbox/Unity/Location/ExampleGpsTraces/LocationProviderAndroidNative.txt" />
+     <None Include="Assets/ThirdParty/Ultimate 10 Plus Shaders/Shaders/Grass Sway.shader" />
+     <None Include="Assets/ThirdParty/Mapbox/Examples/2_AstronautGame/AstronautGame/Building/CharacterBuildingShader.shader" />
+     <None Include="Assets/ThirdParty/Ultimate 10 Plus Shaders/Shaders/Blur.shader" />
+     <None Include="Assets/ThirdParty/Mapbox/Shaders/MapboxStylesPerRenderer.shader" />
+     <None Include="Assets/ThirdParty/Mapbox/Unity/Location/ExampleGpsTraces/LocationProviderUnity.txt" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
+     <None Include="Assets/ThirdParty/Epic Toon FX/Changelog.txt" />
+     <None Include="Assets/ThirdParty/Mapbox/link.xml" />
+     <None Include="Assets/Resources/EpochDescription/1972.txt" />
+     <None Include="Assets/ThirdParty/Ultimate 10 Plus Shaders/Shaders/Plexus/Plexus.compute" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
+     <None Include="Assets/Resources/EpochDescription/1924.txt" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
+     <None Include="Assets/ThirdParty/QuickOutline/Resources/Shaders/OutlineMask.shader" />
+     <None Include="Assets/Shaders/Portal_Trans.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets/ThirdParty/Mapbox/Shaders/MapboxStyles.shader" />
+     <None Include="Assets/ThirdParty/Feel/readme.txt" />
+     <None Include="Assets/ThirdParty/Epic Toon FX/Shaders/ETFX_PowerboxLit.shader" />
+     <None Include="Assets/Resources/EpochDescription/2023.txt" />
+     <None Include="Assets/ThirdParty/Feel/license.txt" />
+     <None Include="Assets/ThirdParty/Ultimate 10 Plus Shaders/Shaders/Depth Mask Edge Detection.shader" />
+     <None Include="Assets/Shaders/Filter.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
+     <None Include="Assets/ThirdParty/Epic Toon FX/Prefabs/Interactive/Interactive FX.txt" />
+     <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
+     <None Include="Assets/ThirdParty/Ultimate 10 Plus Shaders/Shaders/Ocean.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
+     <None Include="Assets/ThirdParty/Ultimate 10 Plus Shaders/Shaders/Dissolve.shader" />
+     <None Include="Assets/Shaders/Skybox.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
+     <None Include="Assets/ThirdParty/Ultimate 10 Plus Shaders/Shaders/Plasma.shader" />
+     <None Include="Assets/ThirdParty/Epic Toon FX/Shaders/ETFX_PowerboxUnlit.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
+     <None Include="Assets/ThirdParty/QuickOutline/Readme.txt" />
+     <None Include="Assets/ThirdParty/Epic Toon FX/Upgrade/URP Compatibility.txt" />
+     <None Include="Assets/ThirdParty/Ultimate 10 Plus Shaders/Shaders/Outline.shader" />
+     <None Include="Assets/Resources/Mapbox/MapboxConfiguration.txt" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
+     <None Include="Assets/Shaders/SkyboxRender.shader" />
+     <None Include="Assets/ThirdParty/Ultimate 10 Plus Shaders/Shaders/Plexus/Plexus Line.shader" />
+     <None Include="Assets/ThirdParty/Mapbox/README.txt" />
+     <None Include="Assets/ThirdParty/Ultimate 10 Plus Shaders/Shaders/Snow.shader" />
+     <None Include="Assets/ThirdParty/Mapbox/Core/Plugins/Android/UniAndroidPermission/AndroidManifest-uniRP.xml" />
+     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
+     <None Include="Assets/ThirdParty/Ultimate 10 Plus Shaders/Shaders/Lava3D.shader" />
+     <None Include="Assets/ThirdParty/Ultimate 10 Plus Shaders/Shaders/Force Field.shader" />
+     <None Include="Assets/ExampleAssets/Shaders/FeatheredPlaneShader.shader" />
+     <None Include="Assets/ThirdParty/Mapbox/Core/Plugins/link.xml" />
+     <None Include="Assets/ThirdParty/Mapbox/Shaders/RasterWithTransparencyShader.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets/Shaders/Portal.shader" />
+     <None Include="Assets/Resources/EpochDescription/1945.txt" />
+     <None Include="Assets/ThirdParty/Mapbox/Fonts/OpenSansLic.txt" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets/ThirdParty/QuickOutline/Resources/Shaders/OutlineFill.shader" />
+     <None Include="Assets/ThirdParty/Ultimate 10 Plus Shaders/Shaders/Simple Sine Wave.shader" />
+     <None Include="Assets/ThirdParty/Mapbox/Unity/Location/ExampleGpsTraces/Helsinki.txt" />
+     <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
+     <None Include="Assets/ThirdParty/Hovl Studio/Magic effects pack/Demo scene/Readme.txt" />
+     <None Include="Assets/ThirdParty/Mapbox/Unity/Location/ExampleGpsTraces/LocationProviderAndroidNative-2.txt" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
+    <Reference Include="UnityEngine">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.DeviceSimulatorModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.DiagnosticsModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GraphViewModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.GraphViewModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PackageManagerUIModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.PackageManagerUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.QuickSearchModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.QuickSearchModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SceneTemplateModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.SceneTemplateModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreFontEngineModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreTextEngineModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIBuilderModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UIBuilderModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsSamplesModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UIElementsSamplesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIServiceModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UIServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UnityConnectModule">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MapboxAccountsUnity">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Assets/ThirdParty/Mapbox/Core/Plugins/Mapbox/MapboxAccounts/net35/MapboxAccountsUnity.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportGeneratorMerged">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
+    </Reference>
+    <Reference Include="Mapbox.Json">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Assets/ThirdParty/Mapbox/Core/Plugins/ThirdParty/Mapbox.Json/Net35/Mapbox.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Mapbox.VectorTile.VectorTileReader">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Assets/ThirdParty/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.VectorTileReader.dll</HintPath>
+    </Reference>
+    <Reference Include="Mapbox.IO.Compression">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Assets/ThirdParty/Mapbox/Core/Plugins/ThirdParty/Mapbox.IO.Compression/net35/Mapbox.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Mapbox.VectorTile.ExtensionMethods">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Assets/ThirdParty/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.ExtensionMethods.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Mapbox.VectorTile.PbfReader">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Assets/ThirdParty/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.PbfReader.dll</HintPath>
+    </Reference>
+    <Reference Include="Mapbox.VectorTile.Geometry">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Assets/ThirdParty/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.Geometry.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Types">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Gradle">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/ref/2.1.0/netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.DispatchProxy">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.DispatchProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+        <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEngineBridge.007">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.007.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.XR.ARCoreExtensions.GeospatialCreator">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Google.XR.ARCoreExtensions.GeospatialCreator.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARCore.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.XR.ARCore.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARKit.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.XR.ARCoreExtensions.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Google.XR.ARCoreExtensions.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.InteractionSubsystems">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.XR.InteractionSubsystems.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARSubsystems.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.XR.ARSubsystems.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Management">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARSubsystems">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.XR.ARSubsystems.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARKit.FaceTracking">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.XR.ARKit.FaceTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARFoundation.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.XR.ARFoundation.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARCore">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.XR.ARCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Tutorials.Core">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.Tutorials.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARKit">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.XR.ARKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.007">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.007.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.XR.OpenXR.Features.OculusQuestSupport.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Management.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARKit.FaceTracking.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.XR.ARKit.FaceTracking.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.XR.ARCoreExtensions.GeospatialCreator.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Google.XR.ARCoreExtensions.GeospatialCreator.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Subsystem.Registration">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Tutorials.Core.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.Tutorials.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.Services.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XR.MagicLeap">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/UnityEngine.XR.MagicLeap.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TerrainTools">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Analytics">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XR.MagicLeap">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/UnityEditor.XR.MagicLeap.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Shared.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TerrainTools.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.TerrainTools.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.XR.ARCoreExtensions">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Google.XR.ARCoreExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Environments">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.Services.Core.Environments.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.XR.OpenXR.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.XR.OpenXR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.ConformanceAutomation">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.XR.OpenXR.Features.ConformanceAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.RuntimeDebugger.Editor">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARFoundation">
+        <HintPath>/Users/hang/Desktop/Unity/Phoenix Oasis/Library/ScriptAssemblies/Unity.XR.ARFoundation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Lofelt.NiceVibrations.Editor.csproj">
+      <Project>{75261b13-1481-6565-5d46-f2ebb85106b4}</Project>
+      <Name>Lofelt.NiceVibrations.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.Tools.Editor.csproj">
+      <Project>{8390386a-fc70-9fb0-f0f9-a956be04c07a}</Project>
+      <Name>MoreMountains.Tools.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.Feedbacks.URP.csproj">
+      <Project>{a3c502fa-f0c9-8e00-2791-e54a5051b9e5}</Project>
+      <Name>MoreMountains.Feedbacks.URP</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.Feedbacks.PostProcessing.csproj">
+      <Project>{6d85a8b4-4e64-5909-5844-bacee232947e}</Project>
+      <Name>MoreMountains.Feedbacks.PostProcessing</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.Feedbacks.NiceVibrations.csproj">
+      <Project>{656c7ee0-40f9-c233-1416-5d575dfb085e}</Project>
+      <Name>MoreMountains.Feedbacks.NiceVibrations</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.Feedbacks.Editor.csproj">
+      <Project>{f962f6d9-fd04-47ad-96f3-03be2a7dccf0}</Project>
+      <Name>MoreMountains.Feedbacks.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.Feedbacks.TextMeshPro.csproj">
+      <Project>{54ad8887-9bb9-cbaf-fb6b-3756a80e12f3}</Project>
+      <Name>MoreMountains.Feedbacks.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="Lofelt.NiceVibrations.Demo.csproj">
+      <Project>{2b60b645-3c75-ed1e-e1d7-e07b3804dba6}</Project>
+      <Name>Lofelt.NiceVibrations.Demo</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.Feedbacks.Cinemachine.csproj">
+      <Project>{d43d675a-2632-f632-906e-c1337560342b}</Project>
+      <Name>MoreMountains.Feedbacks.Cinemachine</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.Feedbacks.HDRP.csproj">
+      <Project>{b4a67625-6d13-39cd-b28e-7a070b0a4391}</Project>
+      <Name>MoreMountains.Feedbacks.HDRP</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.Feedbacks.Authorizations.csproj">
+      <Project>{6a1d6dee-2d77-1a60-df4d-2d9050d3ffc4}</Project>
+      <Name>MoreMountains.Feedbacks.Authorizations</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.Feedbacks.MMTools.csproj">
+      <Project>{46472b40-bb1e-729b-d03a-8520fddff6e6}</Project>
+      <Name>MoreMountains.Feedbacks.MMTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.Feedbacks.csproj">
+      <Project>{c97a8f72-7dd3-0de2-859a-5d4f75b477b5}</Project>
+      <Name>MoreMountains.Feedbacks</Name>
+    </ProjectReference>
+    <ProjectReference Include="Lofelt.NiceVibrations.csproj">
+      <Project>{e8f84a87-a060-f218-0d0c-8e1a572554c6}</Project>
+      <Name>Lofelt.NiceVibrations</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.Tools.csproj">
+      <Project>{f76b6d44-6896-0dfa-8e0f-744344d1d9b5}</Project>
+      <Name>MoreMountains.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

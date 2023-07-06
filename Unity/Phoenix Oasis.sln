@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{b60d8e7c-6049-0ac4-6fc5-d31fd5a5d4c1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Feedbacks", "MoreMountains.Feedbacks.csproj", "{c97a8f72-7dd3-0de2-859a-5d4f75b477b5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Tools", "MoreMountains.Tools.csproj", "{f76b6d44-6896-0dfa-8e0f-744344d1d9b5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Feedbacks.URP", "MoreMountains.Feedbacks.URP.csproj", "{a3c502fa-f0c9-8e00-2791-e54a5051b9e5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Feedbacks.MMTools", "MoreMountains.Feedbacks.MMTools.csproj", "{46472b40-bb1e-729b-d03a-8520fddff6e6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Feedbacks.NiceVibrations", "MoreMountains.Feedbacks.NiceVibrations.csproj", "{656c7ee0-40f9-c233-1416-5d575dfb085e}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Feedbacks.PostProcessing", "MoreMountains.Feedbacks.PostProcessing.csproj", "{6d85a8b4-4e64-5909-5844-bacee232947e}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Feedbacks.HDRP", "MoreMountains.Feedbacks.HDRP.csproj", "{b4a67625-6d13-39cd-b28e-7a070b0a4391}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Feedbacks.TextMeshPro", "MoreMountains.Feedbacks.TextMeshPro.csproj", "{54ad8887-9bb9-cbaf-fb6b-3756a80e12f3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lofelt.NiceVibrations", "Lofelt.NiceVibrations.csproj", "{e8f84a87-a060-f218-0d0c-8e1a572554c6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lofelt.NiceVibrations.Demo", "Lofelt.NiceVibrations.Demo.csproj", "{2b60b645-3c75-ed1e-e1d7-e07b3804dba6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Feedbacks.Cinemachine", "MoreMountains.Feedbacks.Cinemachine.csproj", "{d43d675a-2632-f632-906e-c1337560342b}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Feedbacks.Authorizations", "MoreMountains.Feedbacks.Authorizations.csproj", "{6a1d6dee-2d77-1a60-df4d-2d9050d3ffc4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Tools.Editor", "MoreMountains.Tools.Editor.csproj", "{8390386a-fc70-9fb0-f0f9-a956be04c07a}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{d2486f2f-732b-54ba-84d1-b55cf2f1105c}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Feedbacks.Editor", "MoreMountains.Feedbacks.Editor.csproj", "{f962f6d9-fd04-47ad-96f3-03be2a7dccf0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lofelt.NiceVibrations.Editor", "Lofelt.NiceVibrations.Editor.csproj", "{75261b13-1481-6565-5d46-f2ebb85106b4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{b60d8e7c-6049-0ac4-6fc5-d31fd5a5d4c1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{b60d8e7c-6049-0ac4-6fc5-d31fd5a5d4c1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{c97a8f72-7dd3-0de2-859a-5d4f75b477b5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{c97a8f72-7dd3-0de2-859a-5d4f75b477b5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{f76b6d44-6896-0dfa-8e0f-744344d1d9b5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{f76b6d44-6896-0dfa-8e0f-744344d1d9b5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{a3c502fa-f0c9-8e00-2791-e54a5051b9e5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{a3c502fa-f0c9-8e00-2791-e54a5051b9e5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46472b40-bb1e-729b-d03a-8520fddff6e6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46472b40-bb1e-729b-d03a-8520fddff6e6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{656c7ee0-40f9-c233-1416-5d575dfb085e}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{656c7ee0-40f9-c233-1416-5d575dfb085e}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6d85a8b4-4e64-5909-5844-bacee232947e}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6d85a8b4-4e64-5909-5844-bacee232947e}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{b4a67625-6d13-39cd-b28e-7a070b0a4391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{b4a67625-6d13-39cd-b28e-7a070b0a4391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54ad8887-9bb9-cbaf-fb6b-3756a80e12f3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54ad8887-9bb9-cbaf-fb6b-3756a80e12f3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{e8f84a87-a060-f218-0d0c-8e1a572554c6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{e8f84a87-a060-f218-0d0c-8e1a572554c6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2b60b645-3c75-ed1e-e1d7-e07b3804dba6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2b60b645-3c75-ed1e-e1d7-e07b3804dba6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{d43d675a-2632-f632-906e-c1337560342b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{d43d675a-2632-f632-906e-c1337560342b}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6a1d6dee-2d77-1a60-df4d-2d9050d3ffc4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6a1d6dee-2d77-1a60-df4d-2d9050d3ffc4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8390386a-fc70-9fb0-f0f9-a956be04c07a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8390386a-fc70-9fb0-f0f9-a956be04c07a}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{d2486f2f-732b-54ba-84d1-b55cf2f1105c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{d2486f2f-732b-54ba-84d1-b55cf2f1105c}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{f962f6d9-fd04-47ad-96f3-03be2a7dccf0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{f962f6d9-fd04-47ad-96f3-03be2a7dccf0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75261b13-1481-6565-5d46-f2ebb85106b4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75261b13-1481-6565-5d46-f2ebb85106b4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
