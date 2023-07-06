@@ -6,4 +6,13 @@
 - AR Fondation
 - Mapbox API Admission
 ```
+## Third-Party Plugins
+Download in Unity Asset Store and place them to the folder `/Unity/Assets/ThirdParty`
+```
+- Mapbox
+- Feel
+- QuickOutline
+- SpaceSkies Free
+- Epic Toon FX
+```
 ![Poster](https://github.com/CHAROla1/Beneath-the-Hills-Unity-AR/blob/main/Poster_Mirror%20Worlds_Beneath%20the%20Hills.jpg)
