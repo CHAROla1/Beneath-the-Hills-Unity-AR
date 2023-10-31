@@ -1,5 +1,7 @@
 # Beneath-the-Hills-Unity-AR
 > Immerse yourself in an exhilarating AR excavation and discovery game developed with Unity AR. Explore the Olympia Park of Munich using Mapbox API's geolocation features, as you uncover the park's history across three distinct eras - 1924, 1945, and 1972. Discover significant objects from each period, interact with them, collect them, and progress through portals to advance to the next epoch. Experience the thrill of historical exploration in a portable AR adventure that brings the past to life before your eyes.
+## Showcase
+![image](https://github.com/CHAROla1/Beneath-the-Hills-Unity-AR/blob/main/showcase.gif)
 ## Requirement
 ```
 - Unity 2021.3.11f1
